@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom"
+import Router from "react-router-dom"
 import Login from "./pages/Login"
 import SignUp from "./pages/SignUp"
 import Dashboard from "./pages/Dashboard"
@@ -15,10 +15,9 @@ function App() {
       <Route path="/dashboard" Component={Dashboard}/> 
       <Route path="/pontos-de-coleta" Component={CPoints}/>
       <Route path="/adicionar-novo-ponto-de-coleta" Component={NewCPoint}/>
- </Routes>
-   
+    </Routes>
     </>
   )
 }
 
-export default App
+export default App;
